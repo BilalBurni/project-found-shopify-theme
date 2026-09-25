@@ -1,0 +1,328 @@
+{
+  "sections": {
+    "pf_contact_body": {
+      "type": "section",
+      "name": "Contact form",
+      "blocks": {
+        "ct_columns": {
+          "type": "group",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-start",
+            "gap": 56,
+            "width": "fill",
+            "height": "fit",
+            "background_media": "none",
+            "border": "none"
+          },
+          "blocks": {
+            "ct_info": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "gap": 32,
+                "width": "custom",
+                "custom_width": 38,
+                "height": "fit",
+                "background_media": "none",
+                "border": "none"
+              },
+              "blocks": {
+                "ct_info_1": {
+                  "type": "group",
+                  "settings": {
+                    "content_direction": "column",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "gap": 10,
+                    "width": "fill",
+                    "height": "fit",
+                    "background_media": "none",
+                    "border": "none"
+                  },
+                  "blocks": {
+                    "ct_info_1_icon": {
+                      "type": "icon",
+                      "settings": {
+                        "icon": "perfume",
+                        "width": 26,
+                        "icon_color": "#FF0000"
+                      }
+                    },
+                    "ct_info_1_text": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<h4>Fragrance advice</h4><p>Not sure where to start, or which size makes sense? Tell us what you already wear and we will point you somewhere.</p>",
+                        "type_preset": "rte",
+                        "text_color": "{{ settings.color_palette.color1 }}",
+                        "width": "100%"
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "ct_info_1_icon",
+                    "ct_info_1_text"
+                  ]
+                },
+                "ct_info_2": {
+                  "type": "group",
+                  "settings": {
+                    "content_direction": "column",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "gap": 10,
+                    "width": "fill",
+                    "height": "fit",
+                    "background_media": "none",
+                    "border": "none"
+                  },
+                  "blocks": {
+                    "ct_info_2_icon": {
+                      "type": "icon",
+                      "settings": {
+                        "icon": "box",
+                        "width": 26,
+                        "icon_color": "#FF0000"
+                      }
+                    },
+                    "ct_info_2_text": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<h4>Orders</h4><p>Include your order number if your message is about something you have already bought.</p>",
+                        "type_preset": "rte",
+                        "text_color": "{{ settings.color_palette.color1 }}",
+                        "width": "100%"
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "ct_info_2_icon",
+                    "ct_info_2_text"
+                  ]
+                },
+                "ct_info_3": {
+                  "type": "group",
+                  "settings": {
+                    "content_direction": "column",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "gap": 10,
+                    "width": "fill",
+                    "height": "fit",
+                    "background_media": "none",
+                    "border": "none"
+                  },
+                  "blocks": {
+                    "ct_info_3_icon": {
+                      "type": "icon",
+                      "settings": {
+                        "icon": "star",
+                        "width": 26,
+                        "icon_color": "#FF0000"
+                      }
+                    },
+                    "ct_info_3_text": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<h4>Authenticity</h4><p>Every decant is filled by hand from a genuine retail bottle. Ask us anything about how it is done.</p>",
+                        "type_preset": "rte",
+                        "text_color": "{{ settings.color_palette.color1 }}",
+                        "width": "100%"
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "ct_info_3_icon",
+                    "ct_info_3_text"
+                  ]
+                },
+                "ct_intro": {
+                  "type": "group",
+                  "settings": {
+                    "content_direction": "column",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "gap": 14,
+                    "width": "fill",
+                    "height": "fit",
+                    "background_media": "none",
+                    "border": "none"
+                  },
+                  "blocks": {
+                    "ct_eyebrow": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Contact</p>",
+                        "type_preset": "h6",
+                        "text_color": "#FF0000",
+                        "width": "fit-content"
+                      }
+                    },
+                    "ct_title": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<h1>Get In Touch</h1>",
+                        "type_preset": "h2",
+                        "width": "100%",
+                        "max_width": "normal"
+                      }
+                    },
+                    "ct_sub": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Questions about a fragrance, a size, or an order you have placed? Send a message and a real person will come back to you.</p>",
+                        "type_preset": "rte",
+                        "text_color": "{{ settings.color_palette.color1 }}",
+                        "width": "100%",
+                        "max_width": "normal"
+                      }
+                    },
+                    "ct_email": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Prefer email? Reach us directly at <a href=\"mailto:projectfoundco23@gmail.com\">projectfoundco23@gmail.com</a></p>",
+                        "type_preset": "rte",
+                        "text_color": "{{ settings.color_palette.color1 }}",
+                        "width": "100%",
+                        "max_width": "normal"
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "ct_eyebrow",
+                    "ct_title",
+                    "ct_sub",
+                    "ct_email"
+                  ]
+                }
+              },
+              "block_order": [
+                "ct_intro",
+                "ct_info_1",
+                "ct_info_2",
+                "ct_info_3"
+              ]
+            },
+            "ct_form_col": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "gap": 20,
+                "width": "custom",
+                "custom_width": 55,
+                "height": "fit",
+                "background_media": "none",
+                "background_color": "#101010",
+                "border": "solid",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "{{ settings.color_palette.color2 }}",
+                "border_radius": 0,
+                "padding-block-start": 36,
+                "padding-block-end": 36,
+                "padding-inline-start": 32,
+                "padding-inline-end": 32
+              },
+              "blocks": {
+                "ct_form_heading": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h2>Send A Message</h2>",
+                    "type_preset": "h4",
+                    "width": "fit-content"
+                  }
+                },
+                "ct_form": {
+                  "type": "contact-form",
+                  "settings": {
+                    "width": "custom",
+                    "custom_width": 100,
+                    "width_mobile": "custom",
+                    "custom_width_mobile": 100,
+                    "input_style": "custom",
+                    "input_background_color": "rgba(0,0,0,0)",
+                    "input_text_color": "{{ settings.color_palette.foreground }}",
+                    "input_border_color": "{{ settings.color_palette.color2 }}",
+                    "border_width": 1,
+                    "border_radius": 0
+                  },
+                  "blocks": {
+                    "submit-button": {
+                      "type": "contact-form-submit-button",
+                      "static": true,
+                      "settings": {
+                        "label": "Send Message",
+                        "style_class": "button",
+                        "width": "custom",
+                        "custom_width": 100,
+                        "width_mobile": "custom",
+                        "custom_width_mobile": 100
+                      }
+                    }
+                  },
+                  "block_order": []
+                }
+              },
+              "block_order": [
+                "ct_form_heading",
+                "ct_form"
+              ]
+            }
+          },
+          "block_order": [
+            "ct_info",
+            "ct_form_col"
+          ]
+        }
+      },
+      "block_order": [
+        "ct_columns"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "gap": 0,
+        "section_width": "page-width",
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 80,
+        "padding-block-end": 90
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "content": {
+          "type": "text",
+          "settings": {
+            "text": "{{ closest.page.content }}",
+            "type_preset": "rte",
+            "text_color": "{{ settings.color_palette.color1 }}",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "content"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "gap": 16,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    }
+  },
+  "order": [
+    "pf_contact_body",
+    "main"
+  ]
+}

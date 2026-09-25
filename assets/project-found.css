@@ -1,0 +1,115 @@
+/*
+  Project Found - motion and polish layer
+
+  Deliberately library-free. The brief rules out anything that slows the store
+  down, so this uses the browser's native scroll-driven animation timeline:
+  no JavaScript, no extra network request beyond this file, and it simply does
+  not run where it is unsupported. All of it is off for anyone who has asked
+  their system to reduce motion.
+
+  Sections are targeted by the `pf_` id prefix used by every Project Found
+  section, so nothing here can reach the header, footer, cart drawer, or the
+  product page's sticky add-to-cart.
+*/
+
+@keyframes pf-rise {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pf-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    /* The hero is excluded: it is above the fold and must be there instantly. */
+    [id^='shopify-section-pf_']:not(#shopify-section-pf_hero) {
+      animation: pf-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 55%;
+    }
+
+    /* Full-bleed image bands read better as a straight fade than a lift. */
+    #shopify-section-pf_why,
+    #shopify-section-pf_authenticity {
+      animation-name: pf-fade;
+      animation-range: entry 0% entry 40%;
+    }
+  }
+
+  /* Product and collection cards lift slightly under the cursor. Paired with
+     the theme's own subtle-zoom on the image, not replacing it. */
+  .product-grid .product-card,
+  .collection-list__card {
+    transition: transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  .product-grid .product-card:hover,
+  .collection-list__card:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/* Header links: a red rule that draws in from the left on hover. Kept off the
+   active/current link so the nav never looks like two things are selected. */
+.header__menu a,
+.header__link {
+  position: relative;
+}
+
+.header__menu a::after,
+.header__link::after {
+  content: '';
+  position: absolute;
+  inset-inline: 0;
+  bottom: -4px;
+  height: 1px;
+  background: #ff0000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.header__menu a:hover::after,
+.header__link:hover::after {
+  transform: scaleX(1);
+}
+
+/* Buttons settle rather than snap. */
+.button,
+.button-secondary {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.button:hover,
+.button-secondary:hover {
+  transform: translateY(-2px);
+}
+
+.button:active,
+.button-secondary:active {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button:hover,
+  .button-secondary:hover {
+    transform: none;
+  }
+}

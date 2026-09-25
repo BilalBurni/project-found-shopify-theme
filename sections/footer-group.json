@@ -1,0 +1,222 @@
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer_main": {
+      "type": "footer",
+      "name": "Footer",
+      "blocks": {
+        "ft_brand": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "gap": 14,
+            "width": "fill",
+            "height": "fit",
+            "background_media": "none",
+            "border": "none"
+          },
+          "blocks": {
+            "ft_brand_name": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Project Found</h2>",
+                "type_preset": "h4",
+                "width": "fit-content"
+              }
+            },
+            "ft_brand_tagline": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Find What Defines You.</p>",
+                "type_preset": "h6",
+                "text_color": "#FF0000",
+                "width": "fit-content"
+              }
+            },
+            "ft_brand_blurb": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Authentic designer fragrances, hand-decanted into 5 mL, 10 mL and 15 mL glass atomizers.</p>",
+                "type_preset": "rte",
+                "font_size": "0.875rem",
+                "text_color": "{{ settings.color_palette.color1 }}",
+                "width": "100%",
+                "max_width": "narrow"
+              }
+            },
+            "ft_social": {
+              "type": "social-links",
+              "settings": {
+                "icon_color": "{{ settings.color_palette.foreground }}",
+                "facebook_url": "",
+                "instagram_url": "https://www.instagram.com/projectfoundco/",
+                "youtube_url": "",
+                "tiktok_url": "https://www.tiktok.com/@projectfoundco",
+                "twitter_url": ""
+              }
+            }
+          },
+          "block_order": [
+            "ft_brand_name",
+            "ft_brand_tagline",
+            "ft_brand_blurb",
+            "ft_social"
+          ]
+        },
+        "ft_shop_col": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "gap": 8,
+            "width": "fill",
+            "height": "fit",
+            "background_media": "none",
+            "border": "none"
+          },
+          "blocks": {
+            "ft_shop_menu": {
+              "type": "menu",
+              "settings": {
+                "menu": "shop",
+                "heading": "Shop",
+                "heading_preset": "h6",
+                "link_preset": "paragraph",
+                "menu_spacing": 10,
+                "text_color": "{{ settings.color_palette.color1 }}",
+                "show_as_accordion": false
+              }
+            }
+          },
+          "block_order": ["ft_shop_menu"]
+        },
+        "ft_help_col": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "gap": 8,
+            "width": "fill",
+            "height": "fit",
+            "background_media": "none",
+            "border": "none"
+          },
+          "blocks": {
+            "ft_help_menu": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer",
+                "heading": "Help",
+                "heading_preset": "h6",
+                "link_preset": "paragraph",
+                "menu_spacing": 10,
+                "text_color": "{{ settings.color_palette.color1 }}",
+                "show_as_accordion": false
+              }
+            }
+          },
+          "block_order": ["ft_help_menu"]
+        },
+        "ft_news_col": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "gap": 12,
+            "width": "fill",
+            "height": "fit",
+            "background_media": "none",
+            "border": "none"
+          },
+          "blocks": {
+            "ft_news_signup": {
+              "type": "email-signup",
+              "settings": {
+                "width": "fill",
+                "heading": "Join The List",
+                "heading_preset": "h6",
+                "heading_text_color": "{{ settings.color_palette.foreground }}",
+                "border_style": "underline",
+                "input_style": "custom",
+                "border_width": 1,
+                "border_radius": 0,
+                "input_background_color": "rgba(0,0,0,0)",
+                "input_text_color": "{{ settings.color_palette.foreground }}",
+                "input_border_color": "{{ settings.color_palette.color2 }}",
+                "input_type_preset": "paragraph",
+                "style_class": "button-unstyled",
+                "link_text_color": "#FF0000",
+                "display_type": "arrow",
+                "label": "Sign up",
+                "integrated_button": true,
+                "button_type_preset": "paragraph"
+              }
+            },
+            "ft_news_note": {
+              "type": "text",
+              "settings": {
+                "text": "<p>New arrivals, restocks and early access. Nothing else.</p>",
+                "type_preset": "rte",
+                "font_size": "0.75rem",
+                "text_color": "{{ settings.color_palette.color1 }}",
+                "width": "100%"
+              }
+            }
+          },
+          "block_order": ["ft_news_signup", "ft_news_note"]
+        }
+      },
+      "block_order": [
+        "ft_brand",
+        "ft_shop_col",
+        "ft_help_col",
+        "ft_news_col"
+      ],
+      "settings": {
+        "section_width": "page-width",
+        "gap": 40,
+        "background_color": "#101010",
+        "padding-block-start": 80,
+        "padding-block-end": 40
+      }
+    },
+    "footer_utilities": {
+      "type": "footer-utilities",
+      "name": "Utilities",
+      "blocks": {
+        "ft_copyright": {
+          "type": "footer-copyright",
+          "settings": {
+            "show_powered_by": false,
+            "font_size": "0.75rem",
+            "case": "none"
+          }
+        },
+        "ft_policies": {
+          "type": "footer-policy-list",
+          "settings": {
+            "font_size": "0.75rem",
+            "case": "uppercase"
+          }
+        }
+      },
+      "block_order": ["ft_copyright", "ft_policies"],
+      "settings": {
+        "section_width": "page-width",
+        "gap": 24,
+        "divider_thickness": 1,
+        "divider_color": "{{ settings.color_palette.color2 }}",
+        "background_color": "#101010",
+        "padding-block-start": 24,
+        "padding-block-end": 48
+      }
+    }
+  },
+  "order": ["footer_main", "footer_utilities"]
+}

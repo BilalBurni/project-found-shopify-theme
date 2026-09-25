@@ -1,0 +1,363 @@
+{
+  "sections": {
+    "pf_faq_body": {
+      "type": "section",
+      "name": "FAQ",
+      "blocks": {
+        "faq_columns": {
+          "type": "group",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-start",
+            "gap": 56,
+            "width": "fill",
+            "height": "fit",
+            "background_media": "none",
+            "border": "none"
+          },
+          "blocks": {
+            "faq_intro": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "gap": 16,
+                "width": "custom",
+                "custom_width": 32,
+                "height": "fit",
+                "background_media": "none",
+                "border": "none"
+              },
+              "blocks": {
+                "faq_eyebrow": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Help</p>",
+                    "type_preset": "h6",
+                    "text_color": "#FF0000",
+                    "width": "fit-content"
+                  }
+                },
+                "faq_title": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h1>Frequently Asked</h1>",
+                    "type_preset": "h2",
+                    "width": "100%",
+                    "max_width": "normal"
+                  }
+                },
+                "faq_sub": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Everything people usually want to know about decants, sizes and how we work. If your question is not here, ask us directly.</p>",
+                    "type_preset": "rte",
+                    "text_color": "{{ settings.color_palette.color1 }}",
+                    "width": "100%",
+                    "max_width": "normal"
+                  }
+                },
+                "faq_cta": {
+                  "type": "button",
+                  "settings": {
+                    "label": "Contact Us",
+                    "link": "shopify://pages/contact",
+                    "style_class": "button-secondary"
+                  }
+                }
+              },
+              "block_order": [
+                "faq_eyebrow",
+                "faq_title",
+                "faq_sub",
+                "faq_cta"
+              ]
+            },
+            "faq_list_col": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "gap": 0,
+                "width": "custom",
+                "custom_width": 60,
+                "height": "fit",
+                "background_media": "none",
+                "border": "none"
+              },
+              "blocks": {
+                "faq_accordion": {
+                  "type": "accordion",
+                  "settings": {
+                    "icon": "plus",
+                    "dividers": true,
+                    "divider_color": "{{ settings.color_palette.color2 }}",
+                    "type_preset": "h5",
+                    "text_color": "{{ settings.color_palette.foreground }}",
+                    "border": "none",
+                    "border_radius": 0
+                  },
+                  "blocks": {
+                    "q_decant": {
+                      "type": "_accordion-row",
+                      "settings": {
+                        "heading": "What exactly is a decant?",
+                        "open_by_default": true,
+                        "icon": "perfume",
+                        "width": 22
+                      },
+                      "blocks": {
+                        "q_decant_a": {
+                          "type": "text",
+                          "settings": {
+                            "text": "<p>A decant is authentic designer fragrance transferred from its original retail bottle into a smaller glass atomizer. Same fragrance, smaller amount, much smaller price. It lets you actually live with a scent before deciding whether it deserves a full bottle on your shelf.</p>",
+                            "type_preset": "rte",
+                            "text_color": "{{ settings.color_palette.color1 }}",
+                            "width": "100%"
+                          }
+                        }
+                      },
+                      "block_order": ["q_decant_a"]
+                    },
+                    "q_authentic": {
+                      "type": "_accordion-row",
+                      "settings": {
+                        "heading": "Are your fragrances authentic?",
+                        "icon": "star",
+                        "width": 22
+                      },
+                      "blocks": {
+                        "q_authentic_a": {
+                          "type": "text",
+                          "settings": {
+                            "text": "<p>Yes. Every decant is filled from a genuine retail bottle bought by us. Nothing is diluted, mixed, topped up or substituted. We decant by hand, in small batches, into clean glass atomizers.</p>",
+                            "type_preset": "rte",
+                            "text_color": "{{ settings.color_palette.color1 }}",
+                            "width": "100%"
+                          }
+                        }
+                      },
+                      "block_order": ["q_authentic_a"]
+                    },
+                    "q_affiliation": {
+                      "type": "_accordion-row",
+                      "settings": {
+                        "heading": "Are you affiliated with the designer brands?",
+                        "icon": "question_mark",
+                        "width": 22
+                      },
+                      "blocks": {
+                        "q_affiliation_a": {
+                          "type": "text",
+                          "settings": {
+                            "text": "<p>No. Project Found is an independent decanter. We are not affiliated with, endorsed by or sponsored by any of the fragrance houses whose fragrances we decant, and we do not manufacture the original fragrance. Brand names are used only to tell you which fragrance is in the bottle.</p>",
+                            "type_preset": "rte",
+                            "text_color": "{{ settings.color_palette.color1 }}",
+                            "width": "100%"
+                          }
+                        }
+                      },
+                      "block_order": ["q_affiliation_a"]
+                    },
+                    "q_size": {
+                      "type": "_accordion-row",
+                      "settings": {
+                        "heading": "Which size should I choose?",
+                        "icon": "bottle",
+                        "width": 22
+                      },
+                      "blocks": {
+                        "q_size_a": {
+                          "type": "text",
+                          "settings": {
+                            "text": "<p>Every fragrance comes in 5 mL, 10 mL and 15 mL.</p><p><strong>5 mL</strong> is the try-it size, enough to wear a scent properly for a week or two before you commit. <strong>10 mL</strong> is the sweet spot if you already suspect you will like it. <strong>15 mL</strong> is for a fragrance you know you want in the rotation.</p>",
+                            "type_preset": "rte",
+                            "text_color": "{{ settings.color_palette.color1 }}",
+                            "width": "100%"
+                          }
+                        }
+                      },
+                      "block_order": ["q_size_a"]
+                    },
+                    "q_sprays": {
+                      "type": "_accordion-row",
+                      "settings": {
+                        "heading": "How long will a decant last?",
+                        "icon": "stopwatch",
+                        "width": 22
+                      },
+                      "blocks": {
+                        "q_sprays_a": {
+                          "type": "text",
+                          "settings": {
+                            "text": "<p>As a rough guide, one millilitre gives around ten sprays. So a 5 mL decant is roughly 50 sprays, 10 mL is around 100, and 15 mL is around 150. Two sprays a day means a 5 mL lasts about three to four weeks.</p>",
+                            "type_preset": "rte",
+                            "text_color": "{{ settings.color_palette.color1 }}",
+                            "width": "100%"
+                          }
+                        }
+                      },
+                      "block_order": ["q_sprays_a"]
+                    },
+                    "q_same": {
+                      "type": "_accordion-row",
+                      "settings": {
+                        "heading": "Will it smell the same as the full bottle?",
+                        "icon": "check_box",
+                        "width": 22
+                      },
+                      "blocks": {
+                        "q_same_a": {
+                          "type": "text",
+                          "settings": {
+                            "text": "<p>It is the same fragrance, so yes. The only thing that changes is the sprayer. A decant atomizer produces a slightly finer mist than some designer bottles, so you may need a spray more or less than you are used to.</p>",
+                            "type_preset": "rte",
+                            "text_color": "{{ settings.color_palette.color1 }}",
+                            "width": "100%"
+                          }
+                        }
+                      },
+                      "block_order": ["q_same_a"]
+                    },
+                    "q_storage": {
+                      "type": "_accordion-row",
+                      "settings": {
+                        "heading": "How should I store my decant?",
+                        "icon": "leaf",
+                        "width": 22
+                      },
+                      "blocks": {
+                        "q_storage_a": {
+                          "type": "text",
+                          "settings": {
+                            "text": "<p>Keep it somewhere cool and dark, away from direct sunlight, radiators and the steam of a bathroom. Heat and light are what age a fragrance, not time on its own. Stored properly a decant will stay true for a long time.</p>",
+                            "type_preset": "rte",
+                            "text_color": "{{ settings.color_palette.color1 }}",
+                            "width": "100%"
+                          }
+                        }
+                      },
+                      "block_order": ["q_storage_a"]
+                    },
+                    "q_shipping": {
+                      "type": "_accordion-row",
+                      "settings": {
+                        "heading": "How long does delivery take?",
+                        "icon": "truck",
+                        "width": 22
+                      },
+                      "blocks": {
+                        "q_shipping_a": {
+                          "type": "text",
+                          "settings": {
+                            "text": "<p>Orders are decanted by hand once placed, so allow [X] business days for us to dispatch. Delivery then takes [X to X] business days depending on the service you choose at checkout. Full details are on our <a href=\"/pages/shipping-policy\">Shipping Policy</a> page.</p>",
+                            "type_preset": "rte",
+                            "text_color": "{{ settings.color_palette.color1 }}",
+                            "width": "100%"
+                          }
+                        }
+                      },
+                      "block_order": ["q_shipping_a"]
+                    },
+                    "q_returns": {
+                      "type": "_accordion-row",
+                      "settings": {
+                        "heading": "Can I return a decant?",
+                        "icon": "return",
+                        "width": 22
+                      },
+                      "blocks": {
+                        "q_returns_a": {
+                          "type": "text",
+                          "settings": {
+                            "text": "<p>Unopened decants can be returned within [X] days of delivery. Once a decant has been opened or sprayed we cannot take it back, for hygiene reasons. If something arrives damaged or is not what you ordered, we will always replace or refund it in full. See our <a href=\"/pages/refund-policy\">Return &amp; Refund Policy</a>.</p>",
+                            "type_preset": "rte",
+                            "text_color": "{{ settings.color_palette.color1 }}",
+                            "width": "100%"
+                          }
+                        }
+                      },
+                      "block_order": ["q_returns_a"]
+                    },
+                    "q_tracking": {
+                      "type": "_accordion-row",
+                      "settings": {
+                        "heading": "How do I track my order?",
+                        "icon": "map_pin",
+                        "width": 22
+                      },
+                      "blocks": {
+                        "q_tracking_a": {
+                          "type": "text",
+                          "settings": {
+                            "text": "<p>You get a confirmation email with tracking as soon as your order ships. If it has not arrived, check your spam folder first, then get in touch and we will resend it.</p>",
+                            "type_preset": "rte",
+                            "text_color": "{{ settings.color_palette.color1 }}",
+                            "width": "100%"
+                          }
+                        }
+                      },
+                      "block_order": ["q_tracking_a"]
+                    }
+                  },
+                  "block_order": [
+                    "q_decant",
+                    "q_authentic",
+                    "q_affiliation",
+                    "q_size",
+                    "q_sprays",
+                    "q_same",
+                    "q_storage",
+                    "q_shipping",
+                    "q_returns",
+                    "q_tracking"
+                  ]
+                }
+              },
+              "block_order": ["faq_accordion"]
+            }
+          },
+          "block_order": ["faq_intro", "faq_list_col"]
+        }
+      },
+      "block_order": ["faq_columns"],
+      "settings": {
+        "content_direction": "column",
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "gap": 0,
+        "section_width": "page-width",
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 80,
+        "padding-block-end": 90
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "content": {
+          "type": "text",
+          "settings": {
+            "text": "{{ closest.page.content }}",
+            "type_preset": "rte",
+            "text_color": "{{ settings.color_palette.color1 }}",
+            "width": "100%",
+            "max_width": "narrow"
+          }
+        }
+      },
+      "block_order": ["content"],
+      "settings": {
+        "content_direction": "column",
+        "gap": 16,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    }
+  },
+  "order": ["pf_faq_body", "main"]
+}

@@ -1,0 +1,974 @@
+{
+  "sections": {
+    "pf_hero": {
+      "type": "hero",
+      "name": "Hero",
+      "blocks": {},
+      "block_order": [],
+      "settings": {
+        "media_type_1": "image",
+        "image_1": "shopify://shop_images/pf-hero-desktop.jpg",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": true,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
+        "link": "shopify://collections/shop-fragrance",
+        "open_in_new_tab": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "flex-end",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "flex-end",
+        "gap": 24,
+        "section_width": "full-width",
+        "section_height": "auto",
+        "section_height_custom": 95,
+        "background_color": "rgba(0,0,0,0)",
+        "toggle_overlay": false,
+        "overlay_color": "#0B0B0B59",
+        "overlay_style": "gradient",
+        "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 0,
+        "padding-block-end": 0,
+        "image_1_mobile": "shopify://shop_images/pf-hero-mobile-v2.jpg"
+      }
+    },
+    "pf_marquee": {
+      "type": "marquee",
+      "name": "Trust bar",
+      "blocks": {
+        "m1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>100% Authentic Fragrance</p>",
+            "type_preset": "h6",
+            "width": "fit-content",
+            "wrap": "nowrap"
+          }
+        },
+        "m2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hand-Decanted In Small Batches</p>",
+            "type_preset": "h6",
+            "width": "fit-content",
+            "wrap": "nowrap"
+          }
+        },
+        "m3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>5 mL / 10 mL / 15 mL</p>",
+            "type_preset": "h6",
+            "width": "fit-content",
+            "wrap": "nowrap"
+          }
+        },
+        "m4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Try Before The Full Bottle</p>",
+            "type_preset": "h6",
+            "width": "fit-content",
+            "wrap": "nowrap"
+          }
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2",
+        "m3",
+        "m4"
+      ],
+      "settings": {
+        "movement_direction": "normal",
+        "background_color": "#141414",
+        "padding-block-start": 20,
+        "padding-block-end": 20,
+        "gap_between_elements": 56
+      }
+    },
+    "pf_categories": {
+      "type": "collection-list",
+      "name": "Shop by category",
+      "blocks": {
+        "cat_header": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "gap": 10,
+            "width": "fill",
+            "height": "fit",
+            "background_media": "none",
+            "border": "none",
+            "padding-block-end": 8
+          },
+          "blocks": {
+            "cat_eyebrow": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Find Your Lane</p>",
+                "type_preset": "h6",
+                "text_color": "#FF0000",
+                "width": "fit-content"
+              }
+            },
+            "cat_title": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Shop By Category</h2>",
+                "type_preset": "h3",
+                "width": "fit-content"
+              }
+            }
+          },
+          "block_order": [
+            "cat_eyebrow",
+            "cat_title"
+          ]
+        },
+        "static-collection-card": {
+          "type": "_collection-card",
+          "static": true,
+          "settings": {
+            "placement": "on_image",
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-end",
+            "collection_card_gap": 4,
+            "border": "solid",
+            "border_radius": 0,
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "{{ settings.color_palette.color2 }}"
+          },
+          "blocks": {
+            "collection-card-image": {
+              "type": "_collection-card-image",
+              "static": true,
+              "settings": {
+                "image_ratio": "landscape",
+                "toggle_overlay": true,
+                "overlay_color": "#0B0B0B8C",
+                "overlay_style": "gradient",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_radius": 0
+              }
+            },
+            "collection-title": {
+              "type": "collection-title",
+              "settings": {
+                "type_preset": "h3",
+                "case": "uppercase",
+                "letter_spacing": "tight",
+                "width": "fit-content",
+                "alignment": "left",
+                "background": false,
+                "text_color": "#FFFFFF",
+                "padding-block-end": 2,
+                "padding-inline-start": 24,
+                "padding-inline-end": 24
+              }
+            },
+            "card_cta": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Shop Now</p>",
+                "type_preset": "h6",
+                "text_color": "#FF0000",
+                "width": "fit-content",
+                "padding-block-end": 24,
+                "padding-inline-start": 24
+              }
+            }
+          },
+          "block_order": [
+            "collection-title",
+            "card_cta"
+          ]
+        }
+      },
+      "block_order": [
+        "cat_header"
+      ],
+      "settings": {
+        "collection_list": [
+          "mens-fragrances",
+          "womens-fragrances",
+          "shop-fragrance"
+        ],
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "columns": 3,
+        "mobile_columns": "1",
+        "columns_gap": 16,
+        "rows_gap": 16,
+        "max_collections": 3,
+        "icons_style": "none",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "gap": 32,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "pf_products": {
+      "type": "product-list",
+      "name": "The Collection",
+      "blocks": {
+        "static-header": {
+          "type": "_product-list-content",
+          "static": true,
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": false,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-end",
+            "align_baseline": true,
+            "gap": 12,
+            "width": "fill"
+          },
+          "blocks": {
+            "pl_title": {
+              "type": "_product-list-text",
+              "settings": {
+                "text": "<h2>Best Sellers</h2>",
+                "type_preset": "h3",
+                "width": "fit-content"
+              }
+            },
+            "pl_button": {
+              "type": "_product-list-button",
+              "settings": {
+                "label": "View all",
+                "style_class": "button-unstyled",
+                "link_text_color": "#FF0000",
+                "width": "fit-content"
+              }
+            }
+          },
+          "block_order": [
+            "pl_title",
+            "pl_button"
+          ]
+        },
+        "static-product-card": {
+          "type": "_product-card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 8,
+            "border": "none",
+            "border_radius": 0
+          },
+          "blocks": {
+            "pc_gallery": {
+              "type": "_product-card-gallery",
+              "settings": {
+                "image_ratio": "square",
+                "border": "none",
+                "border_radius": 0
+              }
+            },
+            "pc_title": {
+              "type": "product-title",
+              "settings": {
+                "type_preset": "h6",
+                "width": "100%",
+                "alignment": "left",
+                "padding-block-start": 12
+              }
+            },
+            "pc_price": {
+              "type": "price",
+              "settings": {
+                "type_preset": "h6",
+                "width": "100%",
+                "alignment": "left",
+                "text_color": "#FF0000",
+                "show_installments": false,
+                "show_tax_info": false,
+                "padding-block-start": 2
+              }
+            }
+          },
+          "block_order": [
+            "pc_gallery",
+            "pc_title",
+            "pc_price"
+          ]
+        }
+      },
+      "settings": {
+        "collection": "best-sellers",
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "max_products": 4,
+        "columns": 4,
+        "mobile_columns": "2",
+        "columns_gap": 24,
+        "rows_gap": 48,
+        "section_width": "page-width",
+        "gap": 40,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 0,
+        "padding-block-end": 80
+      }
+    },
+    "pf_why": {
+      "type": "media-with-content",
+      "name": "Why decants",
+      "blocks": {
+        "media": {
+          "type": "_media-without-appearance",
+          "static": true,
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/project-found-why-decants-v2.png",
+            "image_position": "cover"
+          }
+        },
+        "content": {
+          "type": "_content-without-appearance",
+          "static": true,
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 20
+          },
+          "blocks": {
+            "why_eyebrow": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Why Decants</p>",
+                "type_preset": "h6",
+                "text_color": "#FF0000",
+                "width": "fit-content"
+              }
+            },
+            "why_title": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Discover Before The Full Bottle</h2>",
+                "type_preset": "h3",
+                "width": "100%",
+                "max_width": "normal"
+              }
+            },
+            "why_body": {
+              "type": "text",
+              "settings": {
+                "text": "<p>A full bottle is a commitment. A decant is not. Wear a fragrance for a week, build a rotation for the price of one bottle, and carry it anywhere in a small glass atomizer.</p>",
+                "type_preset": "rte",
+                "text_color": "{{ settings.color_palette.color1 }}",
+                "width": "100%",
+                "max_width": "normal"
+              }
+            },
+            "why_cta": {
+              "type": "button",
+              "settings": {
+                "label": "Shop Fragrances",
+                "link": "shopify://collections/shop-fragrance",
+                "style_class": "button-secondary"
+              }
+            }
+          },
+          "block_order": [
+            "why_eyebrow",
+            "why_title",
+            "why_body",
+            "why_cta"
+          ]
+        }
+      },
+      "settings": {
+        "media_position": "left",
+        "media_width": "medium",
+        "media_height": "80svh",
+        "section_width": "full-width",
+        "extend_media": true,
+        "background_color": "#101010",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "pf_experience": {
+      "type": "section",
+      "name": "The experience",
+      "blocks": {
+        "exp_title": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>The Project Found Experience</h2>",
+            "type_preset": "h3",
+            "width": "100%"
+          }
+        },
+        "exp_steps": {
+          "type": "group",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-start",
+            "gap": 40,
+            "width": "fill",
+            "height": "fit",
+            "background_media": "none",
+            "border": "none",
+            "padding-block-start": 16
+          },
+          "blocks": {
+            "step_1": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "gap": 14,
+                "width": "custom",
+                "custom_width": 33,
+                "height": "fit",
+                "background_media": "none",
+                "border": "none"
+              },
+              "blocks": {
+                "step_1_icon": {
+                  "type": "icon",
+                  "settings": {
+                    "icon": "eye",
+                    "width": 30,
+                    "icon_color": "#FF0000"
+                  }
+                },
+                "step_1_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h4>01. Browse</h4><p>Work through the collection and find the fragrances you have been meaning to try.</p>",
+                    "type_preset": "rte",
+                    "text_color": "{{ settings.color_palette.color1 }}",
+                    "width": "100%"
+                  }
+                }
+              },
+              "block_order": [
+                "step_1_icon",
+                "step_1_text"
+              ]
+            },
+            "step_2": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "gap": 14,
+                "width": "custom",
+                "custom_width": 33,
+                "height": "fit",
+                "background_media": "none",
+                "border": "none"
+              },
+              "blocks": {
+                "step_2_icon": {
+                  "type": "icon",
+                  "settings": {
+                    "icon": "bottle",
+                    "width": 30,
+                    "icon_color": "#FF0000"
+                  }
+                },
+                "step_2_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h4>02. Choose Your Size</h4><p>Pick 5 mL, 10 mL or 15 mL. Start small, or commit properly once you know.</p>",
+                    "type_preset": "rte",
+                    "text_color": "{{ settings.color_palette.color1 }}",
+                    "width": "100%"
+                  }
+                }
+              },
+              "block_order": [
+                "step_2_icon",
+                "step_2_text"
+              ]
+            },
+            "step_3": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "gap": 14,
+                "width": "custom",
+                "custom_width": 33,
+                "height": "fit",
+                "background_media": "none",
+                "border": "none"
+              },
+              "blocks": {
+                "step_3_icon": {
+                  "type": "icon",
+                  "settings": {
+                    "icon": "perfume",
+                    "width": 30,
+                    "icon_color": "#FF0000"
+                  }
+                },
+                "step_3_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h4>03. Discover</h4><p>Live with it. Then find the one that actually defines you, and come back for the next.</p>",
+                    "type_preset": "rte",
+                    "text_color": "{{ settings.color_palette.color1 }}",
+                    "width": "100%"
+                  }
+                }
+              },
+              "block_order": [
+                "step_3_icon",
+                "step_3_text"
+              ]
+            }
+          },
+          "block_order": [
+            "step_1",
+            "step_2",
+            "step_3"
+          ]
+        }
+      },
+      "block_order": [
+        "exp_title",
+        "exp_steps"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "gap": 16,
+        "section_width": "page-width",
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 90,
+        "padding-block-end": 90
+      }
+    },
+    "pf_authenticity": {
+      "type": "media-with-content",
+      "name": "Authenticity",
+      "blocks": {
+        "media": {
+          "type": "_media-without-appearance",
+          "static": true,
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/project-found-authenticity-v2.png",
+            "image_position": "cover"
+          }
+        },
+        "content": {
+          "type": "_content-without-appearance",
+          "static": true,
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 20
+          },
+          "blocks": {
+            "auth_eyebrow": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Authenticity</p>",
+                "type_preset": "h6",
+                "text_color": "#FF0000",
+                "width": "fit-content"
+              }
+            },
+            "auth_title": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Real Fragrance. Nothing Else.</h2>",
+                "type_preset": "h3",
+                "width": "100%",
+                "max_width": "normal"
+              }
+            },
+            "auth_body": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Every Project Found decant is filled from an authentic retail bottle. Nothing is diluted, mixed or substituted. We decant by hand, in small batches, into clean glass atomizers.</p><p>Project Found decants are prepared independently. We are not affiliated with, endorsed by, or sponsored by any of the designer fragrance houses whose fragrances we decant.</p>",
+                "type_preset": "rte",
+                "text_color": "{{ settings.color_palette.color1 }}",
+                "width": "100%",
+                "max_width": "normal"
+              }
+            }
+          },
+          "block_order": [
+            "auth_eyebrow",
+            "auth_title",
+            "auth_body"
+          ]
+        }
+      },
+      "settings": {
+        "media_position": "right",
+        "media_width": "medium",
+        "media_height": "80svh",
+        "section_width": "full-width",
+        "extend_media": true,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "pf_social": {
+      "type": "section",
+      "name": "Social",
+      "blocks": {
+        "social_copy": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "gap": 10,
+            "width": "custom",
+            "custom_width": 60,
+            "height": "fit",
+            "background_media": "none",
+            "border": "none"
+          },
+          "blocks": {
+            "social_title": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>See It Before You Smell It</h2>",
+                "type_preset": "h3",
+                "width": "100%",
+                "alignment": "left"
+              }
+            },
+            "social_body": {
+              "type": "text",
+              "settings": {
+                "text": "<p>New arrivals, honest first impressions and the occasional restock warning. Find Project Found on TikTok and Instagram.</p>",
+                "type_preset": "rte",
+                "text_color": "{{ settings.color_palette.color1 }}",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left"
+              }
+            }
+          },
+          "block_order": [
+            "social_title",
+            "social_body"
+          ]
+        },
+        "social_icons": {
+          "type": "group",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": false,
+            "horizontal_alignment": "flex-end",
+            "vertical_alignment": "center",
+            "gap": 24,
+            "width": "custom",
+            "custom_width": 32,
+            "height": "fit",
+            "background_media": "none",
+            "border": "none"
+          },
+          "blocks": {
+            "social_tiktok": {
+              "type": "icon",
+              "settings": {
+                "icon": "tiktok",
+                "width": 32,
+                "icon_color": "{{ settings.color_palette.foreground }}",
+                "link": "https://www.tiktok.com/@projectfoundco"
+              }
+            },
+            "social_instagram": {
+              "type": "icon",
+              "settings": {
+                "icon": "instagram",
+                "width": 32,
+                "icon_color": "{{ settings.color_palette.foreground }}",
+                "link": "https://www.instagram.com/projectfoundco/"
+              }
+            }
+          },
+          "block_order": [
+            "social_tiktok",
+            "social_instagram"
+          ]
+        }
+      },
+      "block_order": [
+        "social_copy",
+        "social_icons"
+      ],
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "space-between",
+        "vertical_alignment": "center",
+        "gap": 40,
+        "section_width": "page-width",
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "pf_trust_icons": {
+      "type": "section",
+      "name": "Trust",
+      "blocks": {
+        "trust_row": {
+          "type": "group",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-start",
+            "gap": 32,
+            "width": "fill",
+            "height": "fit",
+            "background_media": "none",
+            "border": "none"
+          },
+          "blocks": {
+            "trust_1": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 25,
+                "height": "fit",
+                "background_media": "none",
+                "border": "none"
+              },
+              "blocks": {
+                "trust_1_icon": {
+                  "type": "icon",
+                  "settings": {
+                    "icon": "star",
+                    "width": 22,
+                    "icon_color": "#FF0000"
+                  }
+                },
+                "trust_1_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h5>100% Authentic</h5>",
+                    "type_preset": "h6",
+                    "text_color": "{{ settings.color_palette.foreground }}",
+                    "width": "100%"
+                  }
+                }
+              },
+              "block_order": [
+                "trust_1_icon",
+                "trust_1_text"
+              ]
+            },
+            "trust_2": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 25,
+                "height": "fit",
+                "background_media": "none",
+                "border": "none"
+              },
+              "blocks": {
+                "trust_2_icon": {
+                  "type": "icon",
+                  "settings": {
+                    "icon": "perfume",
+                    "width": 22,
+                    "icon_color": "#FF0000"
+                  }
+                },
+                "trust_2_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h5>Hand-Decanted</h5>",
+                    "type_preset": "h6",
+                    "text_color": "{{ settings.color_palette.foreground }}",
+                    "width": "100%"
+                  }
+                }
+              },
+              "block_order": [
+                "trust_2_icon",
+                "trust_2_text"
+              ]
+            },
+            "trust_3": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 25,
+                "height": "fit",
+                "background_media": "none",
+                "border": "none"
+              },
+              "blocks": {
+                "trust_3_icon": {
+                  "type": "icon",
+                  "settings": {
+                    "icon": "eye",
+                    "width": 22,
+                    "icon_color": "#FF0000"
+                  }
+                },
+                "trust_3_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h5>Try Before You Commit</h5>",
+                    "type_preset": "h6",
+                    "text_color": "{{ settings.color_palette.foreground }}",
+                    "width": "100%"
+                  }
+                }
+              },
+              "block_order": [
+                "trust_3_icon",
+                "trust_3_text"
+              ]
+            },
+            "trust_4": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 25,
+                "height": "fit",
+                "background_media": "none",
+                "border": "none"
+              },
+              "blocks": {
+                "trust_4_icon": {
+                  "type": "icon",
+                  "settings": {
+                    "icon": "lock",
+                    "width": 22,
+                    "icon_color": "#FF0000"
+                  }
+                },
+                "trust_4_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h5>Secure Checkout</h5>",
+                    "type_preset": "h6",
+                    "text_color": "{{ settings.color_palette.foreground }}",
+                    "width": "100%"
+                  }
+                }
+              },
+              "block_order": [
+                "trust_4_icon",
+                "trust_4_text"
+              ]
+            }
+          },
+          "block_order": [
+            "trust_1",
+            "trust_2",
+            "trust_3",
+            "trust_4"
+          ]
+        }
+      },
+      "block_order": [
+        "trust_row"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "gap": 0,
+        "section_width": "page-width",
+        "background_color": "#141414",
+        "padding-block-start": 56,
+        "padding-block-end": 56
+      }
+    },
+    "pf_statement": {
+      "type": "section",
+      "name": "Brand statement",
+      "blocks": {
+        "statement_text": {
+          "type": "jumbo-text",
+          "settings": {
+            "text": "Built for people who are still deciding.",
+            "font": "heading",
+            "alignment": "center",
+            "line_height": "0.8",
+            "letter_spacing": "-0.03em",
+            "case": "uppercase",
+            "text_effect": "reveal",
+            "animation_repeat": false,
+            "text_color": "{{ settings.color_palette.foreground }}"
+          }
+        },
+        "statement_cta": {
+          "type": "button",
+          "settings": {
+            "label": "Read Our Story",
+            "link": "shopify://pages/about",
+            "style_class": "button-secondary"
+          }
+        }
+      },
+      "block_order": [
+        "statement_text",
+        "statement_cta"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "horizontal_alignment_flex_direction_column": "center",
+        "gap": 36,
+        "section_width": "page-width",
+        "background_color": "#101010",
+        "padding-block-start": 100,
+        "padding-block-end": 100
+      }
+    }
+  },
+  "order": [
+    "pf_hero",
+    "pf_marquee",
+    "pf_categories",
+    "pf_products",
+    "pf_why",
+    "pf_experience",
+    "pf_authenticity",
+    "pf_trust_icons",
+    "pf_statement",
+    "pf_social"
+  ]
+}
