@@ -2,8 +2,12 @@
 
 A custom Shopify Online Store 2.0 theme built from scratch for **Project Found**, by [Bilal Burney](https://github.com/BilalBurni).
 
+🔗 **Live store:** [www.theprojectfound.com](https://www.theprojectfound.com/)
+
+## Homepage
+
 <!-- HOMEPAGE SCREENSHOT -->
-> 📸 Homepage screenshot coming soon.
+![Homepage](screenshots/homepage.jpg)
 
 ## About this theme
 
